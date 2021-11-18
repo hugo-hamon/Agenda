@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ECF0F3;
+}
+
+
+/* CSS AGENDA */
+
+#main_div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#agenda_div {
+    margin-right: 40px;
+    width: 600px;
+    height: 520px;
+    background-color: #ECF0F3;
+    border-radius: 1rem;
+    box-shadow: .3rem .3rem .6rem #c8d0e7, -.2rem -.2rem .5rem #FFFFFF;
+    padding: 20px;
+}
+
+#agenda_table {
+    table-layout: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 10px;
+    width: 100%;
+}
+
+#agenda_thead td {
+    font-size: 28px;
+    font-weight: 600;
+    color: #000000;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#agenda_tbody td {
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #818181;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+#agenda_tbody td:active {
+    color: #2a2a2a;
+}
+
+#agenda_month {
+    width: 60%;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 905;
+    color: #77159e;
+}
+
+#agenda_month:hover {
+    cursor: pointer;
+}
+
+#button_month {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 3;
+}
+
+#back_month_button {
+    margin-right: 30px;
+    width: 8%;
+}
+
+#back_month_button:hover {
+    cursor: pointer;
+}
+
+#next_month_button {
+    margin-left: 30px;
+    width: 8%;
+}
+
+#next_month_button {
+    cursor: pointer;
+}
+
+select {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background-color: #ECF0F3;
+    outline: none;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 900;
+    color: #77159e;
+}
+
+
+/* CSS EVENEMENT */
+
+#evenement_div {
+    margin-left: 40px;
+    width: 570px;
+    height: 520px;
+    background-color: #ECF0F3;
+    border-radius: 1rem;
+    box-shadow: .3rem .3rem .6rem #c8d0e7, -.2rem -.2rem .5rem #FFFFFF;
+    padding: 20px;
+}
+
+#event_caption {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    color: #159a9e;
+}
+
+#event_date_caption {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 900;
+    color: #159a9e;
+}
+
+#event_fields_div {
+    width: 100%;
+    padding: 25px 5px 5px 5px;
+}
+
+#event_fields_div>div {
+    margin-bottom: 10px;
+}
+
+#event_time_div {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+#event_title_div input,
+#event_desc_div input,
+#event_place_div input,
+#event_time_div input {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1em;
+    font-weight: 600;
+    color: #555;
+    padding: 10px 10px 10px 5px;
+    width: 40%;
+    text-align: center;
+}
+
+#event_title,
+#event_desc,
+#event_place,
+#event_time_div {
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+    overflow: overlay;
+}
+
+#event_submit {
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    height: 60px;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-size: 1.3em;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    background: #159a9e;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    transition: 0.5s;
+}
+
+#event_submit:hover {
+    background: #27c7cc;
+}
+
+#event_submit:active {
+    background: #1c8e92;
+}
+
+
+/* CSS TIME*/
+
+#summer_winter_time {
+    float: right;
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: 22px;
+    font-weight: 900;
+    color: #020101;
+    text-align: center;
+}
+
+#add_event_error {
+    text-align: center;
+    color: #bb1f1f;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+#add_event_success {
+    text-align: center;
+    color: #1fb6bb;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+@media (max-width: 1220px) {
+    #main_div {
+        position: unset;
+        transform: unset;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #agenda_div,
+    #evenement_div {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 920px) {
+    #summer_winter_time {
+        float: none;
+    }
+}
+
+@media (max-width: 600px) {
+    #agenda_div {
+        width: 90%;
+        height: 410px;
+    }
+    #evenement_div {
+        width: 90%;
+    }
+    #agenda_thead td {
+        font-size: 1em;
+        padding-left: 1px;
+    }
+    #agenda_tbody td {
+        font-size: 1.2em;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    #agenda_div {
+        height: 410px;
+    }
+}
+
+@media (max-width: 370px) {
+    #agenda_div {
+        width: 100%;
+        height: 350px;
+    }
+    #evenement_div {
+        width: 100%;
+    }
+    #agenda_thead td {
+        font-size: 0.8em;
+        padding-left: 1px;
+    }
+    #agenda_tbody td {
+        font-size: 0.9em;
+        padding-top: 10px;
+    }
+}

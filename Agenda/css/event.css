@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ECF0F3;
+}
+
+
+/* EVENT CSS */
+
+.event_section {
+    padding-top: 20px;
+    text-align: center;
+    width: 80%;
+    font-weight: 900;
+    margin: 0 auto;
+    font-size: 1.5em;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.event_div {
+    margin: 20px auto;
+    width: 60%;
+    height: auto;
+    background-color: #ECF0F3;
+    border-radius: 1rem;
+    box-shadow: 13px 13px 20px #dcedff, -13px -13px 20px #ffffff;
+    padding: 20px 20px 5px 20px;
+}
+
+.event_desc,
+.event_title {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+    white-space: initial;
+}
+
+.event_title {
+    text-decoration: underline;
+    font-size: 1.3em;
+    color: black;
+}
+
+.event_desc {
+    padding-top: 20px;
+    font-size: 1.1em;
+    color: #818181;
+    text-overflow: ellipsis;
+}
+
+.event_time,
+.event_place {
+    padding-top: 20px;
+    display: block;
+    font-size: 1em;
+    font-weight: 600;
+    color: black;
+}
+
+.event_time_place {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

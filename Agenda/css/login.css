@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ECF0F3;
+}
+
+
+/* CSS LOGIN FORM  */
+
+.login-div {
+    color: #31344B;
+    font-weight: 600;
+    width: 430px;
+    height: 700px;
+    padding: 60px 35px 35px 35px;
+    border-radius: 40px;
+    background: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.login-logo {
+    background: url("../src/agenda-icon.svg");
+    background-size: 80%;
+    background-position-x: 17px;
+    background-position-y: 10px;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: /* logo shadow */
+    0px 0px 2px #5f5f5f, /* offset */
+    0px 0px 0px 5px #ecf0f3, /*bottom right */
+    8px 8px 15px #a7aaaf, /* top left */
+    -8px -8px 15px #ffffff;
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    padding-top: 24px;
+    letter-spacing: 0.5px;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 7px;
+    letter-spacing: 3px;
+}
+
+.fields {
+    width: 100%;
+    padding: 75px 5px 5px 5px;
+}
+
+.fields input {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #555;
+    padding: 20px 10px 20px 5px;
+    width: 80%;
+}
+
+.mail,
+.password {
+    margin-bottom: 30px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+    overflow: overlay;
+}
+
+.fields svg {
+    height: 22px;
+    margin: 0 10px -3px 25px;
+}
+
+.login-button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    text-align: center;
+    background: #24cfaa;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    transition: 0.5s;
+}
+
+.login-button:hover {
+    background: #2fdbb6;
+}
+
+.login-button:active {
+    background: #1da88a;
+}
+
+.link {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.link a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 15px;
+}
+
+.link a:hover {
+    color: #31344B;
+}
+
+.login-statue {
+    text-align: center;
+    color: #DC143C;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+@media (max-width: 430px) {
+    .login-div {
+        color: #31344B;
+        font-weight: 600;
+        width: 100%;
+        height: 700px;
+        padding: 60px 35px 35px 35px;
+        border-radius: 40px;
+        background: #ecf0f3;
+        box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+    .fields input {
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 1.1em;
+        font-weight: 600;
+        color: #555;
+        padding: 20px 10px 20px 5px;
+        width: 100%;
+        text-align: center;
+    }
+    .svg-icon {
+        display: none;
+    }
+}

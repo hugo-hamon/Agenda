@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ECF0F3;
+}
+
+
+/* CSS PLAT CARDS  */
+
+#card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    color: #31344B;
+    font-weight: 600;
+    width: 350px;
+    height: 650px;
+    padding: 60px 35px 35px 35px;
+    border-radius: 40px;
+    background: #ecf0f3;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 250ms;
+}
+
+.title {
+    text-align: center;
+    height: 80px;
+    font-size: 28px;
+    padding-top: 24px;
+    letter-spacing: 0.5px;
+}
+
+.sub-title {
+    text-align: center;
+    height: 80px;
+    font-size: 15px;
+    padding-top: 50px;
+    letter-spacing: 3px;
+}
+
+.card-1 {
+    box-shadow: 13px 13px 20px #d6d6d6, -13px -13px 20px #ffffff;
+}
+
+.card-1:hover {
+    box-shadow: 13px 13px 20px #cac1c1, -13px -13px 20px #ffffff;
+    transform: translateY(-20px);
+}
+
+.card-2 {
+    box-shadow: 13px 13px 20px #ffd5d5, -13px -13px 20px #ffffff;
+}
+
+.card-2:hover {
+    box-shadow: 13px 13px 20px #f6b6b6, -13px -13px 20px #ffffff;
+    transform: translateY(-20px);
+}
+
+.card-3 {
+    box-shadow: 13px 13px 20px #dcedff, -13px -13px 20px #ffffff;
+}
+
+.card-3:hover {
+    box-shadow: 13px 13px 20px #cbe3fd, -13px -13px 20px #ffffff;
+    transform: translateY(-20px);
+}
+
+.card-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: /* logo shadow */
+    0px 0px 2px #5f5f5f, /* offset */
+    0px 0px 0px 5px #ecf0f3, /*bottom right */
+    8px 8px 15px #a7aaaf, /* top left */
+    -8px -8px 15px #ffffff;
+}
+
+.card-1-logo {
+    background: url("../src/parametre_icon.png");
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-2-logo {
+    background: url("../src/calendrier_icon.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-3-logo {
+    background: url("../src/evenements_icon.png");
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-button {
+    margin-top: 90%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    text-align: center;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    transition: 0.5s;
+}
+
+.card-1-button {
+    background: #d6d6d6;
+}
+
+.card-1-button:hover {
+    background: #cacaca;
+}
+
+.card-1-button:active {
+    background: #b9b9b9;
+}
+
+.card-2-button {
+    background: #ffd5d5;
+}
+
+.card-2-button:hover {
+    background: #f8cccc;
+}
+
+.card-2-button:active {
+    background: #ffbfbf;
+}
+
+.card-3-button {
+    background: #d6eaff;
+}
+
+.card-3-button:hover {
+    background: #cae4ff;
+}
+
+.card-3-button:active {
+    background: #b8d9fd;
+}
