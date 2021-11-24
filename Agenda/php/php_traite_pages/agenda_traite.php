@@ -38,18 +38,13 @@
     } else if ($date2 - $date1 < 0) {
         $statue[1] = "Un des champs a mal été remplis !";
     }
-    print_r($statue);
     if ($statue[0] == "" && $statue[1] == "" && !empty($_SESSION['user_id'])){
-        $event_input_title = $bdd_conn->quote($event_input_title);
-        $event_input_desc = $bdd_conn->quote($event_input_desc);
-        $event_input_place = $bdd_conn->quote($event_input_place);
         $start_date = date('Y-m-d H:i:s', $date1);
         $end_date = date('Y-m-d H:i:s', $date2);
         $user_id = $_SESSION['user_id'];
 
-        $event_query = "INSERT INTO evenement (`title`, `description`, `place`, `start_date`, `end_date`, `user_id`) VALUES ('$event_input_title', '$event_input_desc', '$event_input_place', '$start_date', '$end_date', '$user_id')";
-        echo $event_query;
-        $bdd_conn->query($event_query);
+        $reqprep = $bdd_conn->prepare("INSERT INTO evenement (`title`, `description`, `place`, `start_date`, `end_date`, `user_id`) VALUES (?, ?, ?, ?, ?, ?)");
+        $reqvalue = $reqprep->execute(array($event_input_title, $event_input_desc, $event_input_place, $start_date, $end_date, $user_id));
 
         $statue[2] = "Événement créé avec succès";
         $_SESSION['add_event_statue'] = $statue;

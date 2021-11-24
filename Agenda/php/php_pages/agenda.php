@@ -111,9 +111,11 @@
                 
             </form>
         </div>
+        <div id="user_event_div" hidden>
+            <p id="user_event_caption">Vos événements</p>
+    
+        </div>
     </div>
-
-
 </body>
 
 </html>

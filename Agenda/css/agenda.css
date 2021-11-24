@@ -24,7 +24,7 @@ body {
 
 #agenda_div {
     margin-right: 40px;
-    width: 600px;
+    width: 650px;
     height: 520px;
     background-color: #ECF0F3;
     border-radius: 1rem;
@@ -210,7 +210,69 @@ select {
     background: #1c8e92;
 }
 
+#user_event_div {
+    overflow: scroll;
+    margin-left: 40px;
+    width: 570px;
+    height: 520px;
+    background-color: #ECF0F3;
+    border-radius: 1rem;
+    box-shadow: .3rem .3rem .6rem #c8d0e7, -.2rem -.2rem .5rem #FFFFFF;
+    padding: 20px;
+}
 
+#user_event_div::-webkit-scrollbar{
+    display: none;
+}
+
+#user_event_caption{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    color: #159a9e;
+}
+
+.user_event_child_div {
+    margin: 20px auto;
+    width: 90%;
+    height: auto;
+    background-color: #ECF0F3;
+    border-radius: 1rem;
+    box-shadow: 13px 13px 20px #dcedff, -13px -13px 20px #ffffff;
+    padding: 20px 20px 5px 20px;
+}
+
+.user_event_desc,
+.user_event_title {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+    white-space: initial;
+}
+
+.user_event_title {
+    text-decoration: underline;
+    font-size: 1.3em;
+    color: black;
+}
+
+.user_event_time_place {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user_event_time,
+.user_event_place {
+    padding-top: 20px;
+    display: block;
+    font-size: 1em;
+    font-weight: 600;
+    color: black;
+}
 /* CSS TIME*/
 
 #summer_winter_time {

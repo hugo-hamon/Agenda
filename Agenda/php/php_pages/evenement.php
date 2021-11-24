@@ -30,9 +30,9 @@
             if (isset($user_event_query)) {
                 while ($event_list_query = $user_event_query->fetch()) {
                     $event_id = $event_list_query["id"];
-                    $event_title = $event_list_query["title"];
-                    $event_description = $event_list_query["description"];
-                    $event_place = $event_list_query["place"];
+                    $event_title = htmlspecialchars($event_list_query["title"], ENT_QUOTES);
+                    $event_description = htmlspecialchars($event_list_query["description"], ENT_QUOTES);
+                    $event_place = htmlspecialchars($event_list_query["place"], ENT_QUOTES);
                     $event_start_date = $event_list_query["start_date"];
                     $event_end_date = $event_list_query["end_date"];
                     echo "['$event_id','$event_title','$event_description','$event_place','$event_start_date','$event_end_date',],";
@@ -45,6 +45,7 @@
 </head>
 
 <body>
+    <pre id="data"></pre>
     <!-- Nav Bar!-->
     <?php show_nav_bar() ?>
 

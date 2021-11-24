@@ -71,3 +71,13 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+.event_delete_button {
+    float: right;
+    width: 20px;
+    transform: translate(10px, -10px);
+}
+
+.event_delete_button:hover {
+    cursor: pointer;
+}
